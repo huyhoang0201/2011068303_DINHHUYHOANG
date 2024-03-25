@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 238, 238);
+    color: black;
+    /* Thay đổi màu chữ từ white thành black */
+    padding: 10px 20px;
+}
+
+.navbar a,
+.navbar button {
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    color: black;
+    /* Đảm bảo liên kết và nút có màu chữ đen */
+}
+
+/* Định dạng cho nút Like, Follow, và YouTube */
+.navbar-button {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    color: black;
+    /* Màu chữ cho nút */
+}
+
+.navbar-button i {
+    margin-right: 5px;
+    /* Khoảng cách giữa icon và text */
+}
+
+/* Màu sắc cho từng nút */
+.navbar-button.like {
+    color: white;
+   background:#0e76a8 ;
+}
+
+.navbar-button.follow {
+    color: white;/* Màu cho Follow, ví dụ: màu Twitter */
+    background: #1DA1F2;
+}
+
+.navbar-button.youtube {
+    color: white;
+    /* Màu cho YouTube */
+    background: #d02613;
+}
+
+.navbar-button:hover {
+    background-color: #5554543a;
+    /* Màu khi hover */
+}
+
+/* Tùy chỉnh thêm cho phần navbar-right nếu cần */
+.navbar-right button {
+    border: none;
+    background-color: #010100d3;
+    /* Màu nền cho nút */
+    color: white;
+    /* Màu chữ cho nút */
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.navbar-right button:hover {
+    background-color: #0056b3;
+    /* Màu khi hover */
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #007bff; /* Đặt viền cho khung tìm kiếm */
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.search-box input[type="search"] {
+    flex: 1;
+    padding: 5px 10px;
+    border: none; /* Loại bỏ viền mặc định */
+    font-size: 16px;
+    outline: none; /* Loại bỏ đường viền mặc định khi focus */
+}
+
+.search-box .fa-search {
+    color: #007bff;
+    padding: 5px;
+    cursor: pointer;
+}
